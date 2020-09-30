@@ -1,7 +1,7 @@
 export default [
   {
     name: "Fish",
-    breed: "tuxedo",
+    breed: "Netherland Dwarf",
     species: "bunnies",
     gender: "male",
     age: 10,
@@ -12,7 +12,7 @@ export default [
   },
   {
     name: "Henry",
-    breed: "tabby",
+    breed: "Columbia Basin Pygmy",
     species: "bunnies",
     gender: "male",
     age: 8,
@@ -23,7 +23,7 @@ export default [
   },
   {
     name: "Roger",
-    breed: "tabby",
+    breed: " Holland Lop",
     species: "bunnies",
     gender: "male",
     age: 2,
@@ -34,7 +34,7 @@ export default [
   },
   {
     name: "Kitkat",
-    breed: "bombay",
+    breed: "Lionhead",
     species: "bunnies",
     gender: "female",
     age: 4,
