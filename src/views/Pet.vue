@@ -1,0 +1,9 @@
+<template>
+  <div>
+    Pet
+  </div>
+</template>
+
+<script>
+export default {};
+</script>
