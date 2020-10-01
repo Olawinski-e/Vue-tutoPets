@@ -10,11 +10,12 @@
     </h3>
     <button @click="togglePetForm" class="btn btn-primary">Add New Pet</button>
 
-    <b-form @submit.prevent="handleSubmit" @reset="onReset" v-if="showPetForm">
+    <b-form @submit.prevent="handleSubmit" v-if="showPetForm">
       <b-form-group id="input-group-1" label="Pet's Name:" label-for="input-2">
         <b-form-input
           id="input-2"
           v-model="formData.name"
+          type="text"
           required
           placeholder="Enter name"
         ></b-form-input>
@@ -73,13 +74,13 @@ export default {
       const payload = {
         species,
         pet: {
-          name,
           age,
+          name,
         },
       };
       this.addPet(payload);
+
       // reset form after submit
-      console.log(this.formData);
       this.formData = {
         name: "",
         age: 0,
