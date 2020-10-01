@@ -6,7 +6,6 @@
 
 <script>
 import { mapState } from "vuex";
-import bunnies from "@/data/bunnies";
 import PetTable from "@/components/PetTable.vue";
 
 export default {
@@ -14,7 +13,7 @@ export default {
     PetTable,
   },
   data() {
-    return { bunnies };
+    return {};
   },
   computed: {
     ...mapState(["bunnies"]),

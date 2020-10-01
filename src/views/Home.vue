@@ -1,9 +1,13 @@
 <template>
   <div class="home-view-container">
     <h1>Adopt a new best friend.</h1>
-    {{ getAllBunnies.length }}
-    {{ getAllDogs.length }}
-    {{ animalsCount }}
+    <h5>Total no. of Animals ready for Adoption: {{ animalsCount }}</h5>
+    <h3>
+      Bunnies:
+      {{ getAllBunnies.length }}
+      + Dogs:
+      {{ getAllDogs.length }}
+    </h3>
     <button @click="togglePetForm" class="btn btn-primary">Add New Pet</button>
 
     <b-form @submit.prevent="handleSubmit" @reset="onReset" v-if="showPetForm">
@@ -75,6 +79,7 @@ export default {
       };
       this.addPet(payload);
       // reset form after submit
+      console.log(this.formData);
       this.formData = {
         name: "",
         age: 0,

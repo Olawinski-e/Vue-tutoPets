@@ -7,15 +7,11 @@
 </template>
 
 <script>
-import dogs from "@/data/dogs";
-import bunnies from "@/data/bunnies";
 import { mapState } from "vuex";
 
 export default {
   data() {
     return {
-      bunnies,
-      dogs,
       animal: {},
     };
   },
